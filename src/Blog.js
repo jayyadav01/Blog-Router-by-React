@@ -12,13 +12,13 @@ function Blog() {
   return (
     <>
         <div className='blog'>
-            <h2>Blogs</h2>
+            <h2 className='title'>Blogs</h2>
             <div className='blogPosts'>
                 {
                     posts.map((post,index) => {
                         return <div className='post' key={index}>
-                            <h3><Link to={`/posts/${post.id}`}>{post.title}</Link></h3>
-                            <p>{post.body}</p>
+                            <h3 className='head'><Link to={`/Blog/${post.id}`}>{post.title}</Link></h3>
+                            <p className='body'>{post.body}</p>
                         </div>
                     })
                 }

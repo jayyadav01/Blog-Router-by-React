@@ -8,6 +8,7 @@ import Main from './Main'
 import Blog from './Blog'
 import SingleBlog from './SingleBlog'
 import './Home.css'
+import NewBlog from './NewBlog'
 
 function home() {
   return (
@@ -18,8 +19,13 @@ function home() {
                 <Route path='/' element={<Main/>}></Route>
                 <Route path='About' element={<About/>}></Route>
                 <Route path='Contact' element={<Contact/>}></Route>
-                <Route path='Blog' element={<Blog/>}></Route>
-                {/* <Route path='/posts/:id' element={<SingleBlog/>}></Route> */}
+                {/* <Route path='Blog' element={<Blog/>}></Route>
+                <Route path='/posts/:id' element={<SingleBlog/>}></Route> */}
+
+                <Route path='/Blog' element={<NewBlog/>}>
+                  <Route index element={<Blog/>}></Route>
+                  <Route path=':id' element={<SingleBlog/>}></Route>
+                </Route>
             </Routes>
         </BrowserRouter>
 

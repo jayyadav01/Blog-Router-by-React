@@ -43,3 +43,56 @@ ul li a
     color: white;
     text-decoration: none;
 }
+.title
+{
+    text-align: center;
+    margin: 20px 0;
+    color: red;
+    font-size: 40px;
+}
+.post
+{
+    width: 1200px;
+    background-color: tan;
+    margin: 50px auto;
+}
+.head a
+{
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    color: indigo;
+    padding: 20px 50px;
+    text-align: center;
+}
+.body
+{
+    padding: 0px 50px 15px;
+}
+.heading
+{
+    text-align: center;
+    margin: 40px 0;
+    font-size: 40px;
+}
+.singlepost
+{
+    width: 1200px;
+    background-color: rgb(162, 216, 178);
+    margin: 50px auto;
+}
+.singlehead
+{
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    color: darkslategrey;
+    padding: 20px 50px;
+    text-align: center;
+}
+.singlebody
+{
+    padding: 0px 50px 15px;
+}
